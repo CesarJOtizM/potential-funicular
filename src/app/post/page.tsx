@@ -1,5 +1,6 @@
 import type { Metadata, NextPage } from "next";
 import React from "react";
+import { PostContainer } from "src/post/PostContainer";
 
 export const metadata: Metadata = {
   title: "Post",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const page: NextPage = () => {
-  return <div>Post Page</div>;
+  return <PostContainer />;
 };
 
 export default page;
