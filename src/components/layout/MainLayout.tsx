@@ -7,7 +7,7 @@ const MainLayout: NextPage<React.PropsWithChildren> = ({ children }) => {
   return (
     <>
       <AppSidebar />
-      <main>
+      <main className="w-full">
         <SidebarTrigger />
         {children}
       </main>

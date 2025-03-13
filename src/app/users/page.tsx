@@ -1,5 +1,6 @@
 import type { Metadata, NextPage } from "next";
 import React from "react";
+import { UsersContainer } from "src/user/UsersContainer";
 
 export const metadata: Metadata = {
   title: "Users",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const page: NextPage = () => {
-  return <div>Users Page</div>;
+  return <UsersContainer />;
 };
 
 export default page;
