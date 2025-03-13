@@ -13,7 +13,6 @@ export const LazyPostCard: React.FC<Iprops> = ({ post }) => {
     trackVisibility: true, // Esto ayuda a evitar flickering en algunos casos
     delay: 100, // Reduce la frecuencia de activación
   });
-  console.log(inView);
 
   return <div ref={ref}>{inView ? <PostCard post={post} /> : null}</div>;
 };

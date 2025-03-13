@@ -45,12 +45,7 @@ export const PostLayout: React.FC<Iprops> = ({
         </div>
       </div>
 
-      <div
-        className="grid gap-4"
-        style={{
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, max-content))",
-        }}
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {children}
       </div>
     </section>

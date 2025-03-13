@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "View a post data",
 };
 
-const page: NextPage<Iprops> = ({ params }) => {
+const page: NextPage<Iprops> = async ({ params }) => {
   const { id } = params;
   return <PostDetail id={id} />;
 };

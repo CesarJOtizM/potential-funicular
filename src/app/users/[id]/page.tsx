@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "View a users data",
 };
 
-const page: NextPage<Iprops> = ({ params }) => {
+const page: NextPage<Iprops> = async ({ params }) => {
   const { id } = params;
   return <UserByIdContainer id={id} />;
 };
