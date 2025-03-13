@@ -10,8 +10,11 @@ interface Iprops {
 export const UserDetails: React.FC<Iprops> = ({ user }) => {
   return (
     <section className="p-4 w-full">
-      <Link href="/users">
-        <ArrowBigLeft />
+      <Link
+        href="/users"
+        className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+      >
+        Back to Users
       </Link>
 
       <h1 className="font-bold text-2xl mb-4">

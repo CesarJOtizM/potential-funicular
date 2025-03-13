@@ -3,9 +3,10 @@ interface Post {
   id: number;
   title: string;
   body: string;
+  comments: Commentary[];
 }
 
-interface Comment {
+interface Commentary {
   postId: number;
   id: number;
   name: string;
