@@ -1,5 +1,6 @@
 import type { Metadata, NextPage } from "next";
 import React from "react";
+import { UserByIdContainer } from "src/user/UserByIdContainer";
 
 interface Iprops {
   params: { id: string };
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 const page: NextPage<Iprops> = ({ params }) => {
   const { id } = params;
-  return <div>user: {id}</div>;
+  return <UserByIdContainer id={id} />;
 };
 
 export default page;
